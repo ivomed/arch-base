@@ -22,7 +22,7 @@ sudo pacman -S --noconfirm qemu-base libvirt edk2-ovmf virt-manager vde2 dnsmasq
 #----------------------------------KDE------------------------------------
 
 sudo pacman -Syu --noconfirm --needed
-sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluedevil kscreen khotkeys kinfocenter ffmpegthumbs
+sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa plasma-firewall kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluedevil kscreen khotkeys kinfocenter ffmpegthumbs
 
 #----------------------------------SERVICES-------------------------------
 
