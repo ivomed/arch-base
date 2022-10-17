@@ -25,7 +25,7 @@ echo root:PASSWD | chpasswd
 #----------------------------------APPS-----------------------------------
 
 pacman -Sy --noconfirm --needed
-pacman -S --noconfirm base-devel linux-zen-headers linux-firmware grub efibootmgr dosfstools os-prober mtools networkmanager dialog wpa_supplicant wireless_tools nano wget reflector snapper btrfs-progs grub-btrfs duf dolphin konsole rsync ark unzip ntfs-3g kate bash-completion sof-firmware flatpak kinit ttf-droid ttf-hack ttf-font-awesome otf-font-awesome ttf-lato ttf-liberation ttf-linux-libertine ttf-opensans ttf-roboto ttf-ubuntu-font-family terminus-font ufw cronie ksysguard htop kfind sshfs samba openssh nfs-utils cups nmap print-manager cups-pdf grub-customizer neofetch stress fish partitionmanager filelight packagekit-qt5 kdiskmark 
+pacman -S --noconfirm base-devel linux-zen-headers linux-firmware grub efibootmgr dosfstools os-prober mtools networkmanager dialog wpa_supplicant wireless_tools nano wget reflector snapper btrfs-progs grub-btrfs duf dolphin konsole rsync ark unzip ntfs-3g kate bash-completion sof-firmware flatpak kinit ttf-droid ttf-hack ttf-font-awesome otf-font-awesome ttf-lato ttf-liberation ttf-linux-libertine ttf-opensans ttf-roboto ttf-ubuntu-font-family terminus-font ufw cronie ksysguard htop kfind sshfs samba openssh nfs-utils cups nmap print-manager cups-pdf grub-customizer bleachbit neofetch stress fish partitionmanager filelight packagekit-qt5 kdiskmark 
 
 #----------------------------------BTRFS----------------------------------
 
