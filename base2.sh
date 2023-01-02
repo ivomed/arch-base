@@ -22,7 +22,7 @@ sudo pacman -S --noconfirm qemu-base libvirt edk2-ovmf virt-manager vde2 dnsmasq
 #----------------------------------KDE------------------------------------
 
 sudo pacman -Syu --noconfirm --needed
-sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa plasma-firewall kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluedevil kscreen khotkeys kinfocenter ffmpegthumbs
+sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa plasma-firewall kdeplasma-addons kde-gtk-config powerdevil sddm sddm-kcm bluedevil kscreen khotkeys kinfocenter ffmpegthumbs oxygen
 
 #----------------------------------SERVICES-------------------------------
 
@@ -36,15 +36,26 @@ sudo virsh net-start default
 cd ..
 
 sudo sed -i '$ a\ivo    ALL=(ALL)    NOPASSWD: /usr/bin/virsh' /etc/sudoers
-chsh -s /bin/fish
+sudo chsh -s /bin/fish
 
-# ---------------------------------THEME SETTINGS-------------------------
+# ---------------------------------REBOOT-------------------------
 
-tar -C ~/ -xzvf base-home.tar.gz
-rm base-home.tar.gz
-sudo mv /home/ivo/Abstract.jpeg /usr/share/wallpapers/
-sudo mv /home/ivo/Arch.png /usr/share/wallpapers/
-sudo rm -rf /usr/share/sddm/themes/maldives
-sudo rm -rf /usr/share/sddm/themes/maya
-sudo rm -rf /usr/share/sddm/themes/elarun
-sudo rm -rf /usr/share/sddm/themes/breeze
+echo
+/bin/echo -e "\e[1;32mREBOOTING IN 5..\e[0m"
+sleep 1
+echo
+/bin/echo -e "\e[1;32mREBOOTING IN 4..\e[0m"
+sleep 1
+echo
+/bin/echo -e "\e[1;32mREBOOTING IN 3..\e[0m"
+sleep 1
+echo
+/bin/echo -e "\e[1;32mREBOOTING IN 2..\e[0m"
+sleep 1
+echo
+/bin/echo -e "\e[1;32mREBOOTING IN 1..\e[0m"
+sleep 1
+echo
+/bin/echo -e "\e[1;32mR E B O O T I N G\e[0m"
+sleep 1
+reboot
