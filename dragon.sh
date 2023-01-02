@@ -76,8 +76,8 @@ mkdir /mnt/nas
 chown ivo:ivo /mnt/nas
 chsh -s /bin/fish
 
-tar -C /usr/share/sddm/themes/ -xzvf dragon.tar.gz
-rm dragon.tar.gz
+tar -C /usr/share/sddm/themes/ -xzvf sddm-dragon.tar.gz
+rm sddm-dragon.tar.gz
 
 #----------------------------------EXIT----------------------------------
 
