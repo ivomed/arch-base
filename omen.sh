@@ -76,6 +76,9 @@ mkdir /mnt/nas
 chown ivo:ivo /mnt/nas
 chsh -s /bin/fish
 
+tar -C /usr/share/sddm/themes/ -xzvf sddm-omen.tar.gz
+rm sddm-omen.tar.gz
+
 #----------------------------------EXIT----------------------------------
 
 printf "\e[1;32mDONE! Exit, umount -a and REBOOT \e[0m"
