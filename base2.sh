@@ -9,7 +9,7 @@ makepkg -si --noconfirm
 
 # ---------------------------------APPS-----------------------------------
 
-paru -S --noconfirm it87-dkms-git aic94xx-firmware wd719x-firmware brave-bin zramd snap-pac-grub snapper-gui
+paru -S --noconfirm it87-dkms-git aic94xx-firmware wd719x-firmware brave-bin zramd snap-pac-grub snapper-gui ttf-ms-fonts
 
 #----------------------------------NVIDIA DRIVERS-------------------------
 
