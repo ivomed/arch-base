@@ -35,16 +35,16 @@ mkinitcpio -p linux-zen
 #----------------------------------GRUB-----------------------------------
 
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-#----------------------------------AMD------------------------------------
+#----------------------------------DESKTOP--------------------------------
 sed -i '/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"/c \GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 amd_iommu=on"' /etc/default/grub
-#----------------------------------INTEL----------------------------------
+#----------------------------------OMEN-----------------------------------
 #sed -i '/GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"/c \GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 intel_iommu=on"' /etc/default/grub
 
 sleep 1
 sed -i '63s/.//' /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
-#----------------------------------USER------------------------------------
+#----------------------------------USER-----------------------------------
 
 useradd -mG wheel,users,storage,power,lp,adm,optical,audio,video ivo
 echo ivo:PASSWD | chpasswd
